@@ -11,13 +11,8 @@ app.enable('trust proxy');
 app.use(body_parser.json());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// require('./routes/main_routes')(app, knex);
-// require('./routes/doc_routes')(app, knex);
-
 app.get('/', (req, res, next) => {
-  res.sendFile(path.join(__dirname + '/client/build/index.html'));
-  // res.send(`<h1>Express</h1>
-  //         <p>Because that's the way we'll have it on the Matthew Express.</p>`);
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));  
 });
 
 const PORT = process.env.PORT || 8080;

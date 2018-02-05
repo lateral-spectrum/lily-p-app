@@ -1,0 +1,9 @@
+.HeadImageSection-Main { 
+    display: flex;    
+    align-items: center;
+    justify-content: center; 
+    min-height: 200px; 
+    background-color: rgb(96, 240, 0);    
+    width: 100%; 
+    opacity: 0.4;
+}
